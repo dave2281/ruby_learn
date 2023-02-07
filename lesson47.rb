@@ -7,10 +7,10 @@ class OldAndYung
 
   def is_old?
     if @age <= 60
-      print @name, @middle_name
+      puts @name, @middle_name
       return false
     elsif @age >= 60
-      print @name, @middle_name
+      puts @name, @middle_name
       return true
     end
   end
