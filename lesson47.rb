@@ -17,5 +17,7 @@ class OldAndYung
 end
 
 human1 = OldAndYung.new("Mishail", "Pushkin", 72)
+human2 = OldAndYung.new("Dmitry", "Zolotenko", 26)
 
 p human1.is_old?
+p human2.is_old?
