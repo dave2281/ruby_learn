@@ -22,5 +22,4 @@ end
 bridge = Bridge.new
 p bridge
 
-closed_bridge = bridge.close
-p closed_bridge
+bridge.close
