@@ -22,5 +22,5 @@ p all_lines
 p empty_lines
 p "Last 5 lines: "
 last_lines.each do |line|
-  p line
+  p line.chomp
 end
