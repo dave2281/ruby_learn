@@ -1,8 +1,9 @@
 class Product
-    attr_reader :price, :amount
-    
+    attr_accessor :price, :amount, :date_production
+
     def initialize(params)
-        @price = params[:price]
-        @amount = params[:amount]
+      @date_production = params[:date_production]
+      @price = params[:price]
+      @amount = params[:amount]
     end
 end
