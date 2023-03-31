@@ -1,0 +1,22 @@
+{
+  "H":{
+    "number": 1,
+    "name": "Водород",
+    "density": 0.000084,
+    "year": 1766,
+    "discoverer": "Кавендиш"
+  }, 
+  "He":{
+    "number": 2,
+    "name": "Гелий",
+    "latin": "Helium",
+    "period_group": "1, 18",
+    "atomic_mass": "4,002602 (2)",
+    "density": 0.00017,
+    "melt_temp": -272.2,
+    "freeze_temp": -268.9,
+    "year": 1895,
+    "discoverer": "Локьер, Жансен (в спектре Солнца), Рамзай (на Земле)",
+    "pronunciation": "Гелий"
+  }
+}
