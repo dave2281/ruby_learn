@@ -80,7 +80,7 @@ class Post
 
   def self.find(limit, type, id)
     db = SQLite3::Database.open(@@SQLITE_DB_FILE) 
-    if id.present?
+    if !id.nil?
       db.results_as_hash = true 
       result = db.execute("SELECT * FROM posts WHERE  rowid = ?", id)
 
