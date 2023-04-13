@@ -4,7 +4,7 @@ file = File.read("#{__dir__}" + "/" + 'chemical_elements.json')
 elements = JSON.parse(file)
 
 puts "What element u want to find?"
-element_name = 'He'
+element_name = gets.chomp
 
 if elements.has_key?(element_name)
   element = elements[element_name]
