@@ -3,6 +3,7 @@ require_relative 'memo.rb'
 require_relative 'link.rb'
 require_relative 'task.rb'
 
+
 puts "Привет, я блокнот версия 2, записываю новые записи в базу SQLite :)"
 
 puts "Что хотите записать сегодня?"
