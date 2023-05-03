@@ -1,4 +1,3 @@
-# Подключаем нужные библиотеки
 require 'net/http'
 require 'uri'
 require 'rexml/document'
