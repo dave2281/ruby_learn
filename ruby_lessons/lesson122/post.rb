@@ -47,8 +47,6 @@ class Post
     post
   end
 
-  # Метод класса find_all возвращает массив записей из базы данных, который
-  # можно например показать в виде таблицы на экране.
   def self.find_all(limit, type)
     db = SQLite3::Database.open(SQLITE_DB_FILE)
 
