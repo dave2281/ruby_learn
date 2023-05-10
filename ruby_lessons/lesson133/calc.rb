@@ -5,10 +5,11 @@ class Calc
   end
 
   def sum
-    return @a + @b
+    puts @a + @b
   end
 
   def minus
-    return @a - @b
+    puts @a - @b
   end
 end
+

@@ -6,7 +6,7 @@ describe "Calc" do
   let(:minusing) {Calc.new 5, 3}
 
   it "Summation ERROR" do
-    expect(sums.sum).to eq(2)
+    expect(sums.sum).to eq(3)
   end
 
   it "Minus ERROR" do
