@@ -47,4 +47,3 @@ system('aplay path')
 
 puts "Вы успешно прошли все циклы"
 # system("echo -e '\a'")
-# system("powershell -c (New-Object Media.SoundPlayer 'C:\Users\davab\Downloads\alarm-clock-beep-1_zjgin-vd.wav').PlaySync();")
