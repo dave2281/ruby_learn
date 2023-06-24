@@ -1,8 +1,15 @@
 require 'open-uri'
 require 'nokogiri'
 
-#тут можно менять ссылку, ссылка генерируется сайтом, ты ее копируешь и вставляешь сюда, либо же сам пишешь
-search_url = 'https://www.work.ua/ru/jobs-kyiv-ruby+junior/' 
+
+# введи что ищешь, на английском
+search = 'ruby developer' 
+splitted_search = search.split(' ')
+joined_search_for_url = splitted_search.join('+')
+
+
+#тут можно менять ссылку
+search_url = "https://www.work.ua/jobs-#{joined_search_for_url}/" 
 
 page_content = URI.open(search_url).read
 
@@ -19,6 +26,7 @@ end
 
 puts "Запись в файл завершена."
 
+# распределение и удаление ненужных ссылок, остаются только вакансии
 file = File.open('vacancies.txt', 'r')
 lines = file.readlines
 arr = []
@@ -26,6 +34,8 @@ filtered_arr = []
 
 lines.each do |link| 
     if link.match?(/^https\:\/\/[a-z]+\.[a-z]+\.ua\/ru\/jobs\/[0-9]+\//)
+        arr << link.chomp
+    elsif link.match?(/^https\:\/\/[a-z]+\.[a-z]+\.ua\/jobs\/[0-9]+\//)
         arr << link.chomp
     end
 end
