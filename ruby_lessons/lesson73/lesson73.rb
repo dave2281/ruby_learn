@@ -5,4 +5,4 @@ file_lines = File.read(file).chomp
 file.close
 
 words = file_lines.split(' ')
-p words.count {|word| word =~ regexp }
+p words.count {|word| word =~ regexp}
