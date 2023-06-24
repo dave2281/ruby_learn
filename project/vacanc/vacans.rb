@@ -10,9 +10,7 @@ joined_search_for_url = splitted_search.join('+')
 
 #тут можно менять ссылку
 search_url = "https://www.work.ua/jobs-#{joined_search_for_url}/" 
-
-page_content = URI.open(search_url).read
-
+page_content = URI.open(search_url)
 page_doc = Nokogiri::HTML(page_content)
 
 vacancy_links = page_doc.css('.card-hover a')
