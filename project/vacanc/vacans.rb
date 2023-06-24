@@ -30,7 +30,7 @@ lines = file.readlines
 arr = []
 filtered_arr = []
 
-# ссылки вакансий проверяются с помощью regexp
+# ссылки вакансий проверяются с помощью regexp.
 lines.each do |link| 
     if link.match?(/^https\:\/\/[a-z]+\.[a-z]+\.ua\/ru\/jobs\/[0-9]+\//)
         arr << link.chomp
